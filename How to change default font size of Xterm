@@ -1,0 +1,10 @@
+// How to change the default font size of Xterm
+cd ~/..
+sudo touch .Xresources
+sudo chmod 777 .Xresources
+echo "
+		! Use a truetype font and size.
+		xterm*faceName: Monospace
+		xterm*faceSize: 14
+	"
+xrdb -merge ~/.Xresources
